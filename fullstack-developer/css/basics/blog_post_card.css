@@ -1,0 +1,45 @@
+body {
+    background-color: darkslategrey;
+}
+.blog-post-card {
+    border-radius: 5px;
+    background-color: white;
+    width: 100%;
+    text-align: left;
+}
+.post-img {
+    border-bottom: 5px solid black;
+    /* 'background-size: cover' could also be used here */
+    /* 'cover' preserves radio, 'fill' doesn't. Both cover the container */
+    object-fit: cover;
+    /* without width and height, object-fit doesn't work */
+    width: 100%;
+    height: 100%;
+}
+.post-content {
+    padding: 20px;
+}
+.post-title {
+    color: darkslategrey;
+    margin: 0 5px 10px 0;
+}
+.post-excerpt {
+    color: darkolivegreen;
+    margin: 0 5px 10px 0;
+}
+.read-more {
+    border: 2px solid darkslategrey;
+    color: yellowgreen;
+    background-color: darkslategrey;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px 40px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+.read-more:hover {
+    background-color: slategrey;
+}
+

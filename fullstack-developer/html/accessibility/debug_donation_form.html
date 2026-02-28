@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Form</title>
+</head>
+<!--
+  1. Void elements (like '<input>') should not have closing tags.
+  2. each form input field should have label elements so users know what each field is for.
+  3. Associate each label element with its corresponding input element using the for attribute on the label and a matching id attribute on the input.
+  4. input type should match what they are for (example, email inputs)
+  5. Required attribute (like text, email, and number input fields) should have the required attribute, but not the checkbox or submit button.
+  6. Adding id to label: The id will later be referenced by ARIA attributes so assistive technologies can identify this text as the label for the input.
+-->
+<body>
+  <h1>Donation Form</h1>
+  <form>
+
+    <label for="name">Full Name:</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="amount">Donation Amount ($):</label>
+    <input type="number" name="amount" id="amount" required>
+
+    <label for="newsletter">Subscribe</label>
+    <input type="checkbox" name="newsletter" id="newsletter">
+
+    <input type="submit" value="Send">
+  </form>
+</body>
+</html>
